@@ -39,6 +39,13 @@ class Queue:
         self.front = None
         self.front = next
 
+    def preek(self):
+        if self.front is None:
+            print('The queue is empty')
+            return
+
+        print('The front of the queue is:', self.front.data)
+
 
 queue = Queue()
 
@@ -53,3 +60,5 @@ queue.printQueue()
 queue.dequeue()
 
 queue.printQueue()
+
+queue.preek()
